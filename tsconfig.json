@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowUnreachableCode": false,
+    "allowSyntheticDefaultImports": false,
+    "allowJs": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "module": "commonjs",
+    "target": "es5",
+    "declaration": false
+  }
+}

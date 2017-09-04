@@ -1,0 +1,64 @@
+{
+  "name": "lets-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run webpack:dev",
+    "lint": "tslint -c tslint.json \"src/**/*.ts\"",
+    "doc": "typedoc --options typedocconfig.js",
+    "prebuild": "trash dist & mkdirp dist",
+    "build": "npm run lint && npm run webpack:prod",
+    "webpack:dev": "webpack-dev-server --env=dev",
+    "webpack:prod": "webpack --env=prod --progress --colors",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taq-f/lets-cache.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taq-f/lets-cache/issues"
+  },
+  "homepage": "https://github.com/taq-f/lets-cache#readme",
+  "devDependencies": {
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-async-to-generator": "6.24.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "css-loader": "0.28.7",
+    "html-loader": "0.5.1",
+    "json-loader": "0.5.7",
+    "karma": "1.7.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-cli": "1.0.1",
+    "karma-edge-launcher": "0.4.1",
+    "karma-firefox-launcher": "1.0.1",
+    "karma-ie-launcher": "1.0.0",
+    "karma-mocha": "1.3.0",
+    "karma-mocha-reporter": "2.2.4",
+    "karma-webpack": "2.0.4",
+    "mkdirp": "0.5.1",
+    "mocha": "3.5.0",
+    "npm-run-all": "4.1.1",
+    "serve-static": "1.12.4",
+    "style-loader": "0.18.2",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.1",
+    "trash-cli": "1.4.0",
+    "ts-loader": "2.3.4",
+    "tslint": "5.7.0",
+    "typedoc": "0.8.0",
+    "typedoc-webpack-plugin": "1.1.4",
+    "webpack": "3.5.5",
+    "webpack-dev-server": "2.7.1"
+  },
+  "dependencies": {
+    "rxjs": "5.4.3"
+  }
+}
